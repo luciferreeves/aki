@@ -11,7 +11,9 @@ import SwiftUI
 struct akiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .frame(minWidth: 1024, maxWidth: .infinity, minHeight: 768, maxHeight: .infinity)
         }
+        .windowResizability(.contentSize)
     }
 }
